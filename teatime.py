@@ -21,14 +21,16 @@ for tea in teatimes:
 
 print ' '
 
-choice = ' '
+entry = ' '
 
-while choice not in teatimes:
-    choice = raw_input('ENTER A KIND OF TEA: ')
+while entry not in teatimes:
+    entry = raw_input('ENTER A KIND OF TEA: ')
 
-print choice + ' tea should be steeped for ' + str(teatimes[choice]) + ' minutes.'
+print entry + ' tea should be steeped for ' + str(teatimes[entry]) + ' minutes.'
+seconds = teatimes[entry] * 60
 
-seconds = teatimes[choice] * 60
+while entry != '':
+    entry = raw_input('PRESS ENTER TO START ')
 
 for sec in range(seconds)[::-1]:
     print str(sec) + ' seconds remaining...'
