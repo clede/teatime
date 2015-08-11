@@ -1,5 +1,6 @@
 # Tea timer app
 # Jonathan Clede 2015
+# Designed for Python 2
 
 import time
 
