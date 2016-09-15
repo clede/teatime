@@ -4,6 +4,8 @@
 
 import time
 
+# Setup and display list of teas.
+
 teatimes = {'White': 2,
             'Green': 3,
             'Black': 4,
@@ -11,18 +13,15 @@ teatimes = {'White': 2,
             'Oolong': 4,
             'Herbal': 6,
             'Pu-Erh': 4 }
-
 print(' ')
 print('TEA TYPES:')
-
 for tea in teatimes:
-    # print('  ',)
     print(tea)
-
 print(' ')
 
-entry = ' '
+# Set up the timer and start it.
 
+entry = ' '
 while entry not in teatimes:
     entry = input('ENTER A KIND OF TEA: ')
 
