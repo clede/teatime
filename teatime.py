@@ -1,6 +1,6 @@
 # Tea timer app
-# Jonathan Clede 2015
-# Designed for Python 2
+# Jonathan Clede 2016
+# Designed for Python 3
 
 import time
 
@@ -12,28 +12,29 @@ teatimes = {'White': 2,
             'Herbal': 6,
             'Pu-Erh': 4 }
 
-print ' '
-print 'TEA TYPES:'
+print(' ')
+print('TEA TYPES:')
 
 for tea in teatimes:
-    print '  ',
-    print tea
+    # print('  ',)
+    print(tea)
 
-print ' '
+print(' ')
 
 entry = ' '
 
 while entry not in teatimes:
-    entry = raw_input('ENTER A KIND OF TEA: ')
+    entry = input('ENTER A KIND OF TEA: ')
 
-print entry + ' tea should be steeped for ' + str(teatimes[entry]) + ' minutes.'
+print(entry + ' tea should be steeped for ' + str(teatimes[entry]) + 
+      ' minutes.')
 seconds = teatimes[entry] * 60
 
 while entry != '':
-    entry = raw_input('PRESS ENTER TO START ')
+    entry = input('PRESS ENTER TO START ')
 
 for sec in range(seconds)[::-1]:
-    print str(sec) + ' seconds remaining...'
+    print(str(sec) + ' seconds remaining...')
     time.sleep(1)
 
-print 'TEA TIME!'
+print('TEA TIME!')
